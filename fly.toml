@@ -1,4 +1,4 @@
-app = 'communication-style-analyzer'
+app = 'persona-analyzer-bot'
 primary_region = 'iad'
 
 [build]
@@ -6,3 +6,20 @@ primary_region = 'iad'
 
 [env]
   PYTHONUNBUFFERED = '1'
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 8080
+
+  [[services.ports]]
+    port = 80
+    handlers = ['http']
+
+  [[services.ports]]
+    port = 443
+    handlers = ['tls', 'http']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
