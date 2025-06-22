@@ -1,0 +1,16 @@
+.env
+.idea/
+.vscode/
+
+venv/
+/venv/
+
+__pycache__/
+*.pyc
+
+*.pdf
+*.txt
+!requirements.txt
+
+session_cache/
+fsm_storage.json

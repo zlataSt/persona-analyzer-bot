@@ -1,0 +1,8 @@
+.env
+.git
+.gitignore
+.idea
+.vscode
+venv
+__pycache__
+fly.toml
